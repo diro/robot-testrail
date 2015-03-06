@@ -8,3 +8,8 @@ The max query count is 100
     [Documentation]    This test case is ....
     [Tags]    CID:1
 
+# Requirement
+https://github.com/gurock/testrail-api/tree/master/python/2.x
+
+# Usage
+python robot-testrail.py --pid TESTRAIL_PROJECT_ ID--xml ROBOT_RESULT.XML --user ADMIN --pwd ADMIN --testrail http://YOURIP/testrail
