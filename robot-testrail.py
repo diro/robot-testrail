@@ -14,7 +14,7 @@ def parse_uat_result(filename):
 			if cid_str[:4] == "CID:":
 				cid = cid_str[4:]
 				status = test.getElementsByTagName('status')
-				cidstatus[cid] = '1' if status[0].attributes['status'].value=="PASS" else '5'
+				cidstatus[cid] = '1' if status[-1].attributes['status'].value=="PASS" else '5'
 	return cidstatus
 
 def main():
